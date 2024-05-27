@@ -2,6 +2,9 @@ let inputs = document.getElementById("inp");
 let text = document.querySelector(".text");
 
 function Add() {
+  if (inputs.length < 3) {
+    alert("Task should atleast more than 3 character");
+  }
   if (inputs.value == "") {
     alert("Please Enter Task");
   } else {
